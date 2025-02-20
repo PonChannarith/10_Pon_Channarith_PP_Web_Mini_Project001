@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Hanuman:wght@100;300;400;700;900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Suwannaphum:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/output.css"/>
+    <link
+            href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+            rel="stylesheet"
+    />
+</head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Responsive Navbar with Tailwind CSS</title>
+  </head>
+  <body class="font-[Roboto]">
+    <!-- navbar -->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/assets/Blogy..png" class="h-8" alt="Flowbite Logo" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-multi-level"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-multi-level"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Travel</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Food</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Lifestyle</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Fashion</a
+              >
+            </li>
+            <li>
+              <div class="relative -mt-2">
+                <div
+                  class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="search"
+                  id="default-search"
+                  class="block w-full p-3 ps-10 text-sm text-gray-900 rounded-lg bg-gray-100 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Search here..."
+                  required
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- artcle -->
+    <article class="flex mx-auto justify-center align-center mt-5 ml-[37%]">
+      <div
+        class="max-w-md p-6 bg-white absolute shadow-md ml-[-1500px] dark:bg-gray-800 dark:border-gray-700 mt-[150px] mb-[150px] "
+      >
+        <img src="/assets/Category.png" alt="Image  not found" />  
+        <a href="#">
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
+            How to Get Started With <br />
+            Interior Design
+          </h5>
+        </a>
+        <p>March 25, 2021   4 min read</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          Nulla et commodo turpis. Etiam hendrerit ornare pharetra. Cras
+          eleifend purus vitae lorem venenatis bibendum. Sed commodo mi quis
+          augue finibus, ut feugiat erat aliquam.
+        </p>
+        <a
+          href="#"
+          class="inline-flex items-center  px-3 py-5 text-xl font-medium text-center text-white bg-[#FB743E] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Read more
+        </a>
+      </div>
+        <img
+          class="w-[1250px] h-[600px]"
+          src="/assets/image 1 (1).png"
+          alt=""
+        />
+      </div>
+    </article>
+    <!-- section1 -->
+     <section class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div>
+            <h3 class="text-2xl">Recent Post</h3><br>
+            <img src="/assets/BG.png" alt="">
+        </div>
+        <div>
+          
+        </div>
+     </section>
+     
+<section class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+
+  <div class="max-w-sm p-6 bg-gray-100 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <img src="/assets/Category.png" alt="Image  not found" />  
+    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+      Top 10 Beautiful Places in Bangladesh
+    </h5>
+    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+      March 25, 2021 • <span>4 min read</span>
+    </p>
+    
+  
+    <a href="#" class="inline-flex items-center py-2 text-sm font-medium text-center text-[#272343]  rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Read Article
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+    </a>
+  </div>
+<div class="max-w-sm p-6 bg-gray-100 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+  <img src="/assets/Category.png" alt="Image  not found" />  
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+    Top 10 Beautiful Places in Bangladesh
+  </h5>
+  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+    March 25, 2021 • <span>4 min read</span>
+  </p>
+  
+
+  <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center  rounded-lg ho  text-[#FB743E]  ver:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      Read Article
+      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+      </svg>
+  </a>
+</div>
+
+<div class="max-w-sm p-6 bg-gray-100 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+  <img src="/assets/Category.png" alt="Image  not found" />  
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+    Top 10 Beautiful Places in Bangladesh
+  </h5>
+  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+    March 25, 2021 • <span>4 min read</span>
+  </p>
+  
+
+  <a href="#" class="inline-flex items-center py-2 text-sm font-medium text-center text-[#272343]  rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      Read Article
+      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+      </svg>
+  </a>
+</div>
+  
+</section>
+ <!-- section2 -->
+ <section class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <div>
+      <h3 class="text-2xl">Latest Post</h3><br>
+      <img src="/assets/BG.png" alt="">
+  </div>
+  <div>
+  </div>
+</section>
+<!-- third section -->
+
+  <!-- first section -->
+<section >
+  <div class="flex flex-col gap-56">
+    <div class="max-w-screen-xl flex   gap-14 items-center justify-between mx-auto p-4">
+
+    <div class="w-[380px] h-[332px] relative ">
+      <img class="relative w-full  object-cover" src="/assets/image 1 (1).png" alt="Beautiful Place">
+      <div class="w-[355px] h-[219px] top-[315px] p-6 bg-white shadow-lg absolute dark:bg-white">
+        <img src="/assets/Category.png" alt="Category" class="mb-4" />
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          Top 10 Beautiful Places in Bangladesh
+        </h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          March 25, 2021 • <span>4 min read</span>
+        </p>
+        <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Read Article
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="w-[380px] h-[332px] relative ">
+      <img class="relative w-full  object-cover" src="/assets/image 1 (1).png" alt="Beautiful Place">
+      <div class="w-[355px] h-[219px] top-[315px] p-6 bg-white shadow-lg absolute dark:bg-white">
+        <img src="/assets/Category.png" alt="Category" class="mb-4" />
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          Top 10 Beautiful Places in Bangladesh
+        </h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          March 25, 2021 • <span>4 min read</span>
+        </p>
+        <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Read Article
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="w-[380px] h-[332px] relative ">
+      <img class="relative w-full  object-cover" src="/assets/image 1 (1).png" alt="Beautiful Place">
+      <div class="w-[355px] h-[219px] top-[315px] p-6 bg-white shadow-lg absolute dark:bg-white">
+        <img src="/assets/Category.png" alt="Category" class="mb-4" />
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          Top 10 Beautiful Places in Bangladesh
+        </h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          March 25, 2021 • <span>4 min read</span>
+        </p>
+        <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Read Article
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- second row -->
+  <div class="max-w-screen-xl grid grid-cols-3   gap-14 items-center justify-between mx-auto p-4">
+
+    <div class="w-[380px] h-[332px] relative ">
+      <img class="relative w-full  object-cover" src="/assets/image 1 (1).png" alt="Beautiful Place">
+      <div class="w-[355px] h-[219px] top-[315px] p-6 bg-white shadow-lg absolute dark:bg-white">
+        <img src="/assets/Category.png" alt="Category" class="mb-4" />
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          Top 10 Beautiful Places in Bangladesh
+        </h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          March 25, 2021 • <span>4 min read</span>
+        </p>
+        <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Read Article
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="w-[380px] h-[332px] relative ">
+      <img class="relative w-full  object-cover" src="/assets/image 1 (1).png" alt="Beautiful Place">
+      <div class="w-[355px] h-[219px] top-[315px] p-6 bg-white shadow-lg absolute dark:bg-white">
+        <img src="/assets/Category.png" alt="Category" class="mb-4" />
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          Top 10 Beautiful Places in Bangladesh
+        </h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          March 25, 2021 • <span>4 min read</span>
+        </p>
+        <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Read Article
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="w-[380px] h-[332px] relative ">
+      <img class="relative w-full  object-cover" src="/assets/image 1 (1).png" alt="Beautiful Place">
+      <div class="w-[355px] h-[219px] top-[315px] p-6 bg-white shadow-lg absolute dark:bg-white">
+        <img src="/assets/Category.png" alt="Category" class="mb-4" />
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          Top 10 Beautiful Places in Bangladesh
+        </h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          March 25, 2021 • <span>4 min read</span>
+        </p>
+        <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Read Article
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  </div>
+  
+</section>
+
+  <!-- Featured Post -->
+  <section class="max-w-screen-xl mt-56 flex flex-wrap items-center justify-between mx-auto p-4">
+    <div>
+        <h3 class="text-2xl">Fatured Post</h3><br>
+        <img src="/assets/BG.png" alt="">
+    </div>
+   
+    <div>
+      
+    </div>
+ </section>
+ 
+  <section>
+    <!-- first card -->
+    <div class="max-w-screen-xl grid grid-cols-2 items-center justify-between mx-auto p-4">
+      <div class="w-[600px] relative ">
+        <img class="relative w-full  object-cover" src="/assets/image 2.png" alt="Beautiful Place">
+        <div class="w-[520px] h-[219px] top-[400px] p-6 bg-white shadow-lg absolute dark:bg-white">
+          <img src="/assets/Category (1).png" alt="Category" class="mb-4" />
+          <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+            How to Get Started With UI/UX <br>
+             in Figma
+          </h5>
+          <p class="mb-3 font-normal text-[#6D7280] dark:text-gray-400">
+            March 25, 2021 • <span>4 min read</span>
+          </p>
+          <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read Article
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- section card -->
+      <div class="w-[600px] relative ">
+        <img class="relative w-full  object-cover" src="/assets/image 2.png" alt="Beautiful Place">
+        <div class="w-[520px] h-[219px] top-[400px] p-6 bg-white shadow-lg absolute dark:bg-white">
+          <img src="/assets/Category (1).png" alt="Category" class="mb-4" />
+          <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Top 10 beautiful Place in <br>
+             Bangladesh
+          </h5>
+          <p class="mb-3 font-normal text-[#6D7280] dark:text-gray-400">
+            March 25, 2021 • <span>4 min read</span>
+          </p>
+          <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read Article
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+   <!-- second card-->
+    
+    <div>
+      
+    </div>
+  </section>
+ <!-- All Post -->
+ <section class="max-w-screen-xl mt-40 flex flex-wrap items-center justify-between mx-auto p-4">
+  <div>
+      <h3 class="text-2xl">All Post</h3><br>
+      <img src="/assets/BG.png" alt="">
+  </div>
+ 
+  <div>
+    
+  </div>
+</section>
+<!-- Fifth section -->
+<section >
+  <div class="flex flex-col gap-56">
+    <div class="max-w-screen-xl flex   gap-14 items-center justify-between mx-auto p-4">
+
+    <div class="w-[380px] h-[332px] relative ">
+      <img class="relative w-full  object-cover" src="/assets/image 1 (1).png" alt="Beautiful Place">
+      <div class="w-[355px] h-[219px] top-[315px] p-6 bg-white shadow-lg absolute dark:bg-white">
+        <img src="/assets/Category.png" alt="Category" class="mb-4" />
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          Top 10 Beautiful Places in Bangladesh
+        </h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          March 25, 2021 • <span>4 min read</span>
+        </p>
+        <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Read Article
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="w-[380px] h-[332px] relative ">
+      <img class="relative w-full  object-cover" src="/assets/image 1 (1).png" alt="Beautiful Place">
+      <div class="w-[355px] h-[219px] top-[315px] p-6 bg-white shadow-lg absolute dark:bg-white">
+        <img src="/assets/Category.png" alt="Category" class="mb-4" />
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          Top 10 Beautiful Places in Bangladesh
+        </h5>
+
+
+
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          March 25, 2021 • <span>4 min read</span>
+        </p>
+        <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Read Article
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <!-- third section -->
+    <div class="w-[380px] h-[332px] gap-5 ">
+  
+      <div class="gap-5">
+        <!-- Featured Category Title -->
+        <span class="text-2xl">Featured Category</span>
+    
+        <!-- Travel Category -->
+        <div class="bg-cover bg-center bg-no-repeat mb-4 flex relative w-full h-[75px] bg-[url('https://scontent.fpnh9-1.fna.fbcdn.net/v/t39.30808-6/480039558_1124820239324561_8039206288598529262_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGSYD_vmAgghLjgTlHmylG9MJPkUkk81S4wk-RSSTzVLqzF5OIRGS6WVJpOXpKsLUihYy6tL4IgnkqCUklarHti&_nc_ohc=5NpnMUQv0JkQ7kNvgEcMi-E&_nc_oc=AdhvSrFS2SxUjzMjxRfy7i4Gkv_iRXzC74KEPIF-1s757AdALjXcmXRebsHzYk9eVlw&_nc_zt=23&_nc_ht=scontent.fpnh9-1.fna&_nc_gid=AuYvpxMcr509ySDqT9VChDw&oh=00_AYCOsY0-dghtmLu37hDYPUMPZpPaMxFVLYijGYqWXalOaA&oe=67B9F059')]">
+            <button class="absolute ml-5 left-1 py-1 px-4 top-5 bg-white rounded-sm">Travel</button>
+        </div>
+    
+        <!-- Food Category -->
+        <div class="bg-cover bg-center bg-no-repeat mb-4 flex relative w-full h-[75px] bg-[url('https://scontent.fpnh9-1.fna.fbcdn.net/v/t39.30808-6/479520772_1124821085991143_3496753946310244969_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHWCfkfaF3WHBjDYqHcKg44zgorEwEzivHOCisTATOK8YQojiiUZJ6wdyNZOUVfETBYbTZmgxDZ-BxVJn8hsjEJ&_nc_ohc=F-nZVaEzWl8Q7kNvgHZCLMb&_nc_oc=AdjvmL7kSFQI9bc-Cy1GKR6Drtw1QdH4LK6pqh1miC-_VfHEqN0hrIoG9EGyxVn1HCI&_nc_zt=23&_nc_ht=scontent.fpnh9-1.fna&_nc_gid=ACyguEnREx6qRkqccHKMesb&oh=00_AYCCDi-lHsAWg8w17uxYHQr-yp9uMfKBgaz3HcVquL91XA&oe=67B9D537')]">
+            <button class="absolute ml-5 left-1 py-1 px-4 top-5 bg-white rounded-sm">Food</button>
+        </div>
+    
+        <!-- Lifestyle Category -->
+        <div class="bg-cover bg-center bg-no-repeat mb-4 flex relative w-full h-[75px] bg-[url('https://scontent.fpnh9-2.fna.fbcdn.net/v/t39.30808-6/480204702_1124821089324476_1700735528115034769_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHelnzE1ZZXCEGB3JAuM4-uVDZxVVsKuCpUNnFVWwq4Kk38J2IbMmDF_OlkRAT17MctQTfogzw03XGF9R6BEPJ1&_nc_ohc=WZO4g8Jun_4Q7kNvgG5fk_N&_nc_oc=AdjPG_ixLXy3MuHhW98JgpUa25KB_LiF47D8BfyY734WVwTi0zcR7zWOhqsIV8J2F18&_nc_zt=23&_nc_ht=scontent.fpnh9-2.fna&_nc_gid=ACyguEnREx6qRkqccHKMesb&oh=00_AYBzvkrBjPtAL1RR1ZlVGqgkqddNoeQOXdS3nGpM71iRjw&oe=67B9C96C')]">
+            <button class="absolute ml-5 left-1 py-1 px-4 top-5 bg-white rounded-sm">Lifestyle</button>
+        </div>
+    
+        <!-- All Tags Title -->
+        <span class="text-2xl font-medium">All Tags</span>
+    
+        <!-- Tags Grid -->
+        <div class="flex gap-3 w-[390px] flex-wrap mb-4 border-2">
+          
+          
+          <button class="w-auto py-2 px-4 text-sm font-semibold text-gray-800 bg-gray-200 rounded-lg shadow-sm transition duration-300 hover:bg-gray-300 focus:ring-2 focus:ring-blue-400">
+              Journey
+          </button>
+          <button class="w-auto py-2 px-4 text-sm font-semibold text-gray-800 bg-gray-200 rounded-lg shadow-sm transition duration-300 hover:bg-gray-300 focus:ring-2 focus:ring-blue-400">
+              Life
+          </button>
+          <button class="w-auto py-2 px-4 text-sm font-semibold text-gray-800 bg-gray-200 rounded-lg shadow-sm transition duration-300 hover:bg-gray-300 focus:ring-2 focus:ring-blue-400">
+              Food
+          </button>
+          <button class="w-auto py-2 px-4 text-sm font-semibold text-gray-800 bg-gray-200 rounded-lg shadow-sm transition duration-300 hover:bg-gray-300 focus:ring-2 focus:ring-blue-400">
+              Fashion
+          </button>
+          <button class="w-auto py-2 px-4 text-sm font-semibold text-gray-800 bg-gray-200 rounded-lg shadow-sm transition duration-300 hover:bg-gray-300 focus:ring-2 focus:ring-blue-400">
+              UI
+          </button>
+          <button class="w-auto py-2 px-4 text-sm font-semibold text-gray-800 bg-gray-200 rounded-lg shadow-sm transition duration-300 hover:bg-gray-300 focus:ring-2 focus:ring-blue-400">
+              Interior
+          </button>
+          <button class="w-auto py-2 px-4 text-sm font-semibold text-gray-800 bg-gray-200 rounded-lg shadow-sm transition duration-300 hover:bg-gray-300 focus:ring-2 focus:ring-blue-400">
+              Minimalistic
+          </button>
+          <button class="w-auto py-2 px-4 text-sm font-semibold text-gray-800 bg-gray-200 rounded-lg shadow-sm transition duration-300 hover:bg-gray-300 focus:ring-2 focus:ring-blue-400">
+              Design
+          </button>
+        </div>
+        
+
+    </div>
+    
+      
+    </div>
+  </div>
+  <!-- second row -->
+  <div class="max-w-screen-xl grid grid-cols-3   gap-14 items-center justify-between mx-auto p-4">
+
+    <div class="w-[380px] h-[332px] relative ">
+      <img class="relative w-full  object-cover" src="/assets/image 1 (1).png" alt="Beautiful Place">
+      <div class="w-[355px] h-[219px] top-[315px] p-6 bg-white shadow-lg absolute dark:bg-white">
+        <img src="/assets/Category.png" alt="Category" class="mb-4" />
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          Top 10 Beautiful Places in Bangladesh
+        </h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          March 25, 2021 • <span>4 min read</span>
+        </p>
+        <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Read Article
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="w-[380px] h-[332px] relative ">
+      <img class="relative w-full  object-cover" src="/assets/image 1 (1).png" alt="Beautiful Place">
+      <div class="w-[355px] h-[219px] top-[315px] p-6 bg-white shadow-lg absolute dark:bg-white">
+        <img src="/assets/Category.png" alt="Category" class="mb-4" />
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          Top 10 Beautiful Places in Bangladesh
+        </h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          March 25, 2021 • <span>4 min read</span>
+        </p>
+        <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Read Article
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+   
+  </div>
+
+  
+  </div>
+  
+</section>
+
+
+
+<!--footer -->
+<footer class="bg-[#272343] dark:bg-gray-900 mt-56">
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+            <a href="" class="text-4xl text-[#FFFFFF]">Biog<span class="text-[#FB743E]">y.</span></a>
+
+            <p class="text-[#ffffffcc] mt-1 font-light">Phasellus porttitor sapien a purus <br> venenatis condimentum. Nunc lectus <br>
+               ipsum, laoreet ut efficitur.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+                <h2 class="mb-2 text-2xl font-semibold text-[#FFFFFF]  dark:text-white">Category</h2>
+                <ul class="text-[#ffffffcc] dark:text-gray-400 font-light">
+                    <li class="mb-1">
+                        <a href="https://flowbite.com/" class="hover:underline">Travel</a>
+                    </li>
+                    <li class="mb-1">
+                        <a href="https://tailwindcss.com/" class="hover:underline">Food</a>
+                    </li class="mb-1">
+                      <li>
+                        <a href="https://tailwindcss.com/" class="hover:underline">Lifestyle</a>
+                    </li>
+                    <li class="mb-1">
+                      <a href="https://tailwindcss.com/" class="hover:underline">Fashion</a>
+                  </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-2 text-2xl font-semibold text-[#FFFFFF]  dark:text-white">Follow us</h2>
+                <ul class="text-[#ffffffcc] dark:text-gray-400 font-light">
+                    <li class="mb-1">
+                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Twitter</a>
+                    </li>
+                    <li>
+                      <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Instagram</a>
+                  </li>
+                  <li>
+                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Youtube</a>
+                </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-2 text-2xl font-semibold text-[#FFFFFF] dark:text-white">Newsletter</h2>
+              <div>
+                <input class="px-3 py-3 bg-[#5b567b] "  type="text" placeholder="Enter Email">
+                <button type="button" class=" text-white bg-[#FB743E] border-0  text-md px-3 py-3 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Subscrible</button>
+              </div>
+           
+
+            </div>
+        </div>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-[#ffffffcc] sm:text-center dark:text-gray-400">© 2021 - Biogy<a href="" class="hover:underline"></a>
+        </span>
+        <span class="text-[#ffffffcc]">Designed & Develop by Zakirsoft</span>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
