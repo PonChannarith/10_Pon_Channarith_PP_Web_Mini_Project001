@@ -3,10 +3,10 @@
 
 @theme {
   --color-custom-blue: #4c3bcf;
-  --font-narith:"Koulen", serif;
+  --font-narith:"Poppins", serif;
 }
 
-body {
+body{
   font-family: var(--font-narith);
   background-color: #f5f5f5;
 }

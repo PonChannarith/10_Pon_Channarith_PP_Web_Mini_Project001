@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,305 +18,802 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/output.css"/>
+    <link rel="stylesheet" href="/output.css" />
     <link
-            href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
-            rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
     />
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Responsive Navbar with Tailwind CSS</title>
+    <title>Fashion</title>
   </head>
-<body class="font-[Roboto]">
-    <main class="bg-[#F5F5F5] h-[470px]">
+  <body class="font-narith">
+    <!-- navbar -->
     <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/assets/Blogy..png" class="h-8" alt="Flowbite Logo" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-multi-level"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-multi-level"
+          aria-expanded="false"
         >
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="/assets/Blogy..png" class="h-8" alt="Flowbite Logo" />
-          </a>
-          <button
-            data-collapse-toggle="navbar-multi-level"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-multi-level"
-            aria-expanded="false"
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
           >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
-            <ul
-              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                  aria-current="page"
-                  >Home</a
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Travel</a
+              >
+            </li>
+            <li>
+              <a
+                href="food.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Food</a
+              >
+            </li>
+            <li>
+              <a
+                href="lifeSrtle.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Lifestyle</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Fashion</a
+              >
+            </li>
+            <li>
+              <div class="relative -mt-2">
+                <div
+                  class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
                 >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Travel</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Food</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-  
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Lifestyle</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Fashion</a
-                >
-              </li>
-              <li>
-                <div class="relative -mt-2">
-                  <div
-                    class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                  <svg
+                    class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
                   >
-                    <svg
-                      class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                      />
-                    </svg>
-                  </div>
-                  <input
-                    type="search"
-                    id="default-search"
-                    class="block w-full p-3 ps-10 text-sm text-gray-900 rounded-lg bg-gray-100 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Search here..."
-                    required
-                  />
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    />
+                  </svg>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- main -->
-   
-       <h1 class="text-[40px] color-[#272343] font-extrabold text-center mt-36">‘Travel’ here’s what we’ve got</h1>
-       
-            <form class="max-w-2xl mx-auto flex gap-2 ">   
-                <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-                <div class="relative">
-                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                        </svg>
-                    </div>
-                    <input type="search" id="default-search" class="block w-[751px] h-[68px] p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-[#FFFFFF] focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Travel" required />
-                </div>
-                <button type="submit" class="w-[137px] h-[66px] bg-[#FB743E] text-white end-2.5 bottom-2.5 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-lg px-6  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
-            </form>
-        </main>
-       <!-- content -->
-       <section class="mt-8">
-        <!-- first card -->
-        <div class="max-w-screen-xl grid grid-cols-2 items-center justify-between mx-auto p-4">
-          <div class="w-[600px] relative ">
-            <img class="relative w-full  object-cover" src="/assets/image 2.png" alt="Beautiful Place">
-            <div class="w-[520px] h-[219px] top-[400px] p-6 bg-white shadow-lg absolute dark:bg-white">
-              <img src="/assets/Category (1).png" alt="Category" class="mb-4" />
-              <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
-                How to Get Started With UI/UX <br>
-                 in Figma
-              </h5>
-              <p class="mb-3 font-normal text-[#6D7280] dark:text-gray-400">
-                March 25, 2021 • <span>4 min read</span>
-              </p>
-              <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read Article
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-    
-          <!-- section card -->
-          <div class="w-[600px] relative ">
-            <img class="relative w-full  object-cover" src="/assets/image 2.png" alt="Beautiful Place">
-            <div class="w-[520px] h-[219px] top-[400px] p-6 bg-white shadow-lg absolute dark:bg-white">
-              <img src="/assets/Category (1).png" alt="Category" class="mb-4" />
-              <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Top 10 beautiful Place in <br>
-                 Bangladesh
-              </h5>
-              <p class="mb-3 font-normal text-[#6D7280] dark:text-gray-400">
-                March 25, 2021 • <span>4 min read</span>
-              </p>
-              <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read Article
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-          
-        </div>
-       <!-- second card-->
-        
-        <div>
-          
-        </div>
-      </section>
-      <section class="mt-40">
-        <!-- first card -->
-        <div class="max-w-screen-xl grid grid-cols-2 items-center justify-between mx-auto p-4">
-          <div class="w-[600px] relative ">
-            <img class="relative w-full  object-cover" src="/assets/image 2.png" alt="Beautiful Place">
-            <div class="w-[520px] h-[219px] top-[400px] p-6 bg-white shadow-lg absolute dark:bg-white">
-              <img src="/assets/Category (1).png" alt="Category" class="mb-4" />
-              <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
-                How to Get Started With UI/UX <br>
-                 in Figma
-              </h5>
-              <p class="mb-3 font-normal text-[#6D7280] dark:text-gray-400">
-                March 25, 2021 • <span>4 min read</span>
-              </p>
-              <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read Article
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-    
-          <!-- section card -->
-          <div class="w-[600px] relative ">
-            <img class="relative w-full  object-cover" src="/assets/image 2.png" alt="Beautiful Place">
-            <div class="w-[520px] h-[219px] top-[400px] p-6 bg-white shadow-lg absolute dark:bg-white">
-              <img src="/assets/Category (1).png" alt="Category" class="mb-4" />
-              <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Top 10 beautiful Place in <br>
-                 Bangladesh
-              </h5>
-              <p class="mb-3 font-normal text-[#6D7280] dark:text-gray-400">
-                March 25, 2021 • <span>4 min read</span>
-              </p>
-              <a href="#" class="inline-flex items-center  py-2 text-sm font-medium text-center text-[#272343] rounded-lg hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read Article
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-          
-        </div>
-       <!-- second card-->
-        
-        <div>
-          
-        </div>
-      </section>
-      <!-- footer -->
-      <footer class="bg-[#272343] dark:bg-gray-900 mt-56">
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            <div class="md:flex md:justify-between">
-              <div class="mb-6 md:mb-0">
-                  <a href="" class="text-4xl text-[#FFFFFF]">Biog<span class="text-[#FB743E]">y.</span></a>
-                  <p class="text-[#ffffffcc] mt-1 font-light">Phasellus porttitor sapien a purus <br> venenatis condimentum. Nunc lectus <br>
-                     ipsum, laoreet ut efficitur.</p>
+                <input
+                  type="search"
+                  id="default-search"
+                  class="block w-full p-3 ps-10 text-sm text-gray-900 rounded-lg bg-gray-100 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Search here..."
+                  required
+                />
               </div>
-              <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                  <div>
-                      <h2 class="mb-2 text-2xl font-semibold text-[#FFFFFF]  dark:text-white">Category</h2>
-                      <ul class="text-[#ffffffcc] dark:text-gray-400 font-light">
-                          <li class="mb-1">
-                              <a href="https://flowbite.com/" class="hover:underline">Travel</a>
-                          </li>
-                          <li class="mb-1">
-                              <a href="https://tailwindcss.com/" class="hover:underline">Food</a>
-                          </li class="mb-1">
-                            <li>
-                              <a href="https://tailwindcss.com/" class="hover:underline">Lifestyle</a>
-                          </li>
-                          <li class="mb-1">
-                            <a href="https://tailwindcss.com/" class="hover:underline">Fashion</a>
-                        </li>
-                      </ul>
-                  </div>
-                  <div>
-                      <h2 class="mb-2 text-2xl font-semibold text-[#FFFFFF]  dark:text-white">Follow us</h2>
-                      <ul class="text-[#ffffffcc] dark:text-gray-400 font-light">
-                          <li class="mb-1">
-                              <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Facebook</a>
-                          </li>
-                          <li>
-                              <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Twitter</a>
-                          </li>
-                          <li>
-                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Instagram</a>
-                        </li>
-                        <li>
-                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Youtube</a>
-                      </li>
-                      </ul>
-                  </div>
-                  <div>
-                      <h2 class="mb-2 text-2xl font-semibold text-[#FFFFFF] dark:text-white">Newsletter</h2>
-                    <div>
-                      <input class="px-3 py-3 bg-[#5b567b] "  type="text" placeholder="Enter Email">
-                      <button type="button" class=" text-white bg-[#FB743E] border-0  text-md px-3 py-3 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Subscrible</button>
-                    </div>
-                 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- main -->
+    <section class="relative w-[95%] h-[700px] mx-auto flex items-center justify-center text-white bg-cover bg-no-repeat" style="background-image: url('/assets/Beach1.webp')">
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-black/40"></div>
+    
+      <!-- Content -->
+      <div class="relative text-center z-10">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold">
+          Your world of joy
+        </h1>
+        <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl mt-2 max-w-full sm:max-w-2xl mx-auto">
+          From local escapes to far-flung adventures, find what makes you happy anytime, anywhere.
+        </p>
+    
+        <!-- Search Bar -->
+        <div class="relative w-full flex justify-center mt-6">
+          <div class="bg-white shadow-lg rounded-2xl p-4 flex flex-wrap sm:flex-nowrap items-center justify-between w-full gap-4 sm:mx-4">
+            
+            <!-- Search Inputs -->
+            <div class="flex flex-wrap sm:flex-nowrap gap-4 w-full">
+              <div class="flex items-center gap-3 rounded-lg px-4 py-2 w-full sm:w-[250px] md:w-[200px]">
+                <div class="w-[50px] h-[40px] border-2 rounded-lg"></div>
+                <div>
+                  <span class="text-blue-900 font-semibold">Where</span>
+                  <p class="text-gray-500 text-sm">Search destinations</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 rounded-lg px-4 py-2 w-full sm:w-[270px] md:w-[220px]">
+                <div class="w-[50px] h-[40px] border-2 rounded-lg"></div>
+                <div>
+                  <span class="text-blue-900 font-semibold">When</span>
+                  <p class="text-black text-sm">February 05 ~ March 14</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 rounded-lg px-4 py-2 w-full sm:w-[225px] md:w-[200px]">
+                <div class="w-[50px] h-[40px] border-2 rounded-lg"></div>
+                <div>
+                  <span class="text-blue-900 font-semibold">Tour Type</span>
+                  <p class="text-gray-500 text-sm">All tour</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Search Button -->
+            <button class="bg-orange-500 text-white font-semibold px-6 py-3 text-sm rounded-lg shadow-md hover:bg-orange-600 w-full sm:w-auto md:w-[150px] md:ml-2">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+  
+  
+
+    <!-- section -->
+    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl max-w-screen-xl flex font-bold items-center justify-between mx-auto p-4 mt-36">
+      Why choose Tourz
+      <button class="text-sm font-normal">See more</button>
+    </h2>
+    
+    <div class="max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch justify-between mx-auto p-6 sm:p-8 md:p-10 lg:p-12 xl:p-14 2xl:p-16">
+      <!-- Card 1 -->
+      <div class="flex flex-col bg-white border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 p-6">
+        <img src="/assets/ticket.svg fill.png" alt="Ultimate flexibility" class="w-16 h-16 mb-4 mx-auto" />
+        <h5 class="text-[17px] sm:text-[18px] md:text-[20px] font-semibold text-[#05073C] dark:text-white tracking-tight text-center">
+          Ultimate flexibility
+        </h5>
+        <p class="text-gray-500 text-left dark:text-gray-400 mt-2">
+          You're in control, with free cancellation and payment options to satisfy any plan or budget.
+        </p>
+      </div>
+    
+      <!-- Card 2 -->
+      <div class="flex flex-col bg-white border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 p-6">
+        <img src="/assets/hot-air-balloon.svg.png" alt="Memorable experiences" class="w-16 h-16 mb-4 mx-auto" />
+        <h5 class="text-[17px] sm:text-[18px] md:text-[20px] font-semibold text-[#05073C] dark:text-white text-center">
+          Memorable experiences
+        </h5>
+        <p class="text-gray-500 dark:text-gray-400 mt-2">
+          Browse and book tours and activities so incredible, you'll want to tell your friends.
+        </p>
+      </div>
+    
+      <!-- Card 3 -->
+      <div class="flex flex-col bg-white border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 p-6">
+        <img src="/assets/diamond.svg.png" alt="Quality at our core" class="w-16 h-16 mb-4 mx-auto" />
+        <h5 class="text-[17px] sm:text-[18px] md:text-[20px] font-semibold text-[#05073C] dark:text-white text-center">
+          Quality at our core
+        </h5>
+        <p class="text-gray-500 dark:text-gray-400 mt-2">
+          High-quality standards. Millions of reviews. A tourz company.
+        </p>
+      </div>
+    
+      <!-- Card 4 -->
+      <div class="flex flex-col bg-white border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 p-6">
+        <img src="/assets/medal.svg.png" alt="Award-winning support" class="w-16 h-16 mb-4 mx-auto" />
+        <h5 class="text-[17px] sm:text-[18px] md:text-[20px] font-semibold text-[#05073C] dark:text-white text-center">
+          Award-winning support
+        </h5>
+        <p class="text-gray-500 dark:text-gray-400 mt-2">
+          New price? New plan? No problem. We're here to help, 24/7.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Third section -->
+    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl max-w-screen-xl flex font-bold items-center justify-between mx-auto p-4">
+      Trending destinations
+      <button class="text-sm font-normal">See more</button>
+    </h2>
+    
+    <div class="max-w-screen-xl grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6 items-stretch justify-between mx-auto p-6 sm:p-8 md:p-10 lg:p-12 xl:p-14 2xl:p-16">
+      <!-- profile1 -->
+      <div class="flex flex-col items-center">
+        <img src="/assets/image.png" alt="" class="w-full h-auto"/>
+        <h3 class="text-center mt-3 text-[#05073C] font-medium">Paris</h3>
+        <p class="text-center text-[#05073C]">100+ Tours</p>
+      </div>
+      <!-- profile2 -->
+      <div class="flex flex-col items-center">
+        <img src="/assets/div.featureImage__image.png" alt="" class="w-full h-auto"/>
+        <h3 class="text-center mt-3 text-[#05073C] font-medium">Singapore</h3>
+        <p class="text-center text-[#05073C]">300+ Tours</p>
+      </div>
+      <!-- profile3 -->
+      <div class="flex flex-col items-center">
+        <img src="/assets/image (3).png" alt="" class="w-full h-auto"/>
+        <h3 class="text-center mt-3 text-[#05073C] font-medium">Roma</h3>
+        <p class="text-center text-[#05073C]">400+ Tours</p>
+      </div>
+      <!-- profile4 -->
+      <div class="flex flex-col items-center">
+        <img src="/assets/div.featureImage__image (1).png" alt="" class="w-full h-auto"/>
+        <h3 class="text-center mt-3 text-[#05073C] font-medium">Bangkok</h3>
+        <p class="text-center text-[#05073C]">100+ Tours</p>
+      </div>
+      <!-- profile5 -->
+      <div class="flex flex-col items-center">
+        <img src="/assets/image (4).png" alt="" class="w-full h-auto"/>
+        <h3 class="text-center mt-3 text-[#05073C] font-medium">Bali</h3>
+        <p class="text-center text-[#05073C]">600+ Tours</p>
+      </div>
+      <!-- profile6 -->
+      <div class="flex flex-col items-center">
+        <img src="/assets/div.featureImage__image (2).png" alt="" class="w-full h-auto"/>
+        <h3 class="text-center mt-3 text-[#05073C] font-medium">Phuket</h3>
+        <p class="text-center text-[#05073C]">200+ Tours</p>
+      </div>
+      <!-- profile7 -->
+      <div class="flex flex-col items-center">
+        <img src="/assets/div.featureImage__image (3).png" alt="" class="w-full h-auto"/>
+        <h3 class="text-center mt-3 text-[#05073C] font-medium">Tokyo</h3>
+        <p class="text-center text-[#05073C]">700+ Tours</p>
+      </div>
+      <!-- profile8 -->
+      <div class="flex flex-col items-center">
+        <img src="/assets/image (5).png" alt="" class="w-full h-auto"/>
+        <h3 class="text-center mt-3 text-[#05073C] font-medium">Cappadocia</h3>
+        <p class="text-center text-[#05073C]">900+ Tours</p>
+      </div>
+    </div>
+    
+    <!-- fifth section -->
+    <h2
+      class="text-2xl max-w-screen-xl flex font-bold items-center justify-between mx-auto p-4 mt-5"
+    >
+      Find Popular Tours
+      <button class="text-sm font-normal">See more</button>
+    </h2>
+
+    <!-- six section -->
+    <div class="max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6 items-stretch justify-between mx-auto p-6">
+  
+      <!-- Card 1 -->
+      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="p-3 rounded-t-lg" src="/assets/image (6).png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+          <p class="font-normal text-sm text-[#717171] ml-[42px]">Paris,France</p>
+          <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Centipede Tour - Guided Arizona Desert Tour by ATV
+            </h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5 text-center">
+            <p class="text-center mx-auto">4.8 (243)</p>
+          </div>
+          <hr size="1" class="border" />
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-sm text-gray-900 font-medium dark:text-white">4 days</span>
+            <a href="#" class="text-gray-900 focus:ring-4 focus:outline-none font-medium focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              From $189.25
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Card 2 -->
+      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="p-3 rounded-t-lg" src="/assets/image (7).png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+          <p class="font-normal text-sm text-[#717171] ml-[42px]">New York, USA</p>
+          <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Molokini and Turtle Town Snorkeling Adventure
+            </h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5 text-center">
+            <p class="text-center mx-auto">4.8 (243)</p>
+          </div>
+          <hr size="1" class="border" />
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-sm text-gray-900 font-medium dark:text-white">4 days</span>
+            <a href="#" class="text-gray-900 focus:ring-4 focus:outline-none font-medium focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              From $225
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Card 3 -->
+      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="p-3 rounded-t-lg" src="/assets/image (8).png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+          <p class="font-normal text-sm text-[#717171] ml-[42px]">London, UK</p>
+          <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Westminster Walking Tour & Westminster Abbey Entry
+            </h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5 text-center">
+            <p class="text-center mx-auto">4.8 (243)</p>
+          </div>
+          <hr size="1" class="border" />
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-sm text-gray-900 font-medium dark:text-white">4 days</span>
+            <a href="#" class="text-gray-900 focus:ring-4 focus:outline-none font-medium focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              From $943
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Card 4 -->
+      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="p-3 rounded-t-lg" src="/assets/image (9).png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+          <p class="font-normal text-sm text-[#717171] ml-[42px]">London, UK</p>
+          <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Westminster Walking Tour & Westminster Abbey Entry
+            </h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5 text-center">
+            <p class="text-center mx-auto">4.8 (243)</p>
+          </div>
+          <hr size="1" class="border" />
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-sm text-gray-900 font-medium dark:text-white">4 days</span>
+            <a href="#" class="text-gray-900 focus:ring-4 focus:outline-none font-medium focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              From $943
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Card 5 -->
+      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="p-3 rounded-t-lg" src="/assets/image (10).png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+          <p class="font-normal text-sm text-[#717171] ml-[42px]">Paris, France</p>
+          <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Space Center Houston Admission Ticket
+            </h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5 text-center">
+            <p class="text-center mx-auto">4.8 (243)</p>
+          </div>
+          <hr size="1" class="border" />
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-sm text-gray-900 font-medium dark:text-white">4 days</span>
+            <a href="#" class="text-gray-900 focus:ring-4 focus:outline-none font-medium focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              From $189.25
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Card 6 -->
+      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="p-3 rounded-t-lg" src="/assets/div.tourCard__image.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+          <p class="font-normal text-sm text-[#717171] ml-[42px]">New York,USA</p>
+          <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Clear Kayak Tour of Shell Key Preserver and Tampa Area
+            </h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5 text-center">
+            <p class="text-center mx-auto">4.8 (243)</p>
+          </div>
+          <hr size="1" class="border" />
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-sm text-gray-900 font-medium dark:text-white">4 days</span>
+            <a href="#" class="text-gray-900 focus:ring-4 focus:outline-none font-medium focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              From $225
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="p-3 rounded-t-lg" src="/assets/div.tourCard__image (1).png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+          <p class="font-normal text-sm text-[#717171] ml-[42px]">Londonn UK</p>
+          <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              History and Haunting of Salen Guided walking Tour
+            </h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5 text-center">
+            <p class="text-center mx-auto">4.8 (243)</p>
+          </div>
+          <hr size="1" class="border" />
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-sm text-gray-900 font-medium dark:text-white">4 days</span>
+            <a href="#" class="text-gray-900 focus:ring-4 focus:outline-none font-medium focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              From $225
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card8 -->
+      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="p-3 rounded-t-lg" src="/assets/div.tourCard__image (2).png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+          <p class="font-normal text-sm text-[#717171] ml-[42px]">New York,USA</p>
+          <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Mauna Kea Summit Sunset and Stars Free Astro Photos
+            </h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5 text-center">
+            <p class="text-center mx-auto">4.8 (243)</p>
+          </div>
+          <hr size="1" class="border" />
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-sm text-gray-900 font-medium dark:text-white">4 days</span>
+            <a href="#" class="text-gray-900 focus:ring-4 focus:outline-none font-medium focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              From $225
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Seventh section -->
+    <div class="max-w-screen-xl grid gap-6 justify-between mx-auto p-6">
+      <div class="flex flex-col md:flex-row w-full mx-auto">
+        <div class="w-full md:w-[50%] font-semibold bg-amber-200 tracking-tight text-gray-900 dark:text-white shadow-2xl text-center p-6">
+          <h2 class="  text-3xl md:pt-5">
+            Grab up to <span class="text-[#EB662B]">35% off</span> <br />
+            on your favorite <br />
+            Destination
+          </h2>
+          <p class="font-normal">
+            Limited time offer, don't miss the opportunity
+          </p>
+          <button
+            type="button"
+            class="focus:outline-none text-white bg-[#EB662B] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium mt-3 rounded-lg text-sm px-5 py-3 me-2 mb-2 dark:focus:ring-yellow-900"
+          >
+            Book Now
+          </button>
+        </div>
+        <div class="w-full md:w-[50%] mx-auto">
+          <img src="/assets/image (11).png" alt="" class="w-full h-auto" />
+        </div>
+      </div>
+    </div>
+    
+    <!-- Eight section -->
+    <div class="max-w-screen-xl flex items-stretch justify-between mx-auto p-6">
+      <h2 class="text-2xl font-medium">Popular things to do</h2>
+      <button class="font-normal text-sm">See more</button>
+    </div>
+    <section class=" max-w-screen-xl grid gap-6 justify-between mx-auto p-6">
+      <div class="flex flex-col lg:flex-row md:flex-row sm:flex-row gap-4">
+        <!-- Column 1 -->
+        <div class="flex flex-col gap-5 ">
+          <div class="bg-white  sm:w-[270px] md:w-[350px] h-[250px] rounded-lg shadow-lg overflow-hidden relative">
+            <img
+              src="/assets/div.featureCard__image (7).png"
+              class="w-full h-full object-cover"
+              alt="Location"
+            />
+         
+            <div class="absolute bottom-2 p-4">
+              <h2 class="text-white font-bold text-lg">Cruises</h2>
+        
+            </div>
+          </div>
+          <div class="bg-white sm:w-[350px] h-[250px] rounded-lg shadow-lg overflow-hidden relative">
+            <img
+              src="/assets/div.featureCard__image (9).png "
+              class="w-full h-full object-cover"
+              alt="Location"
+            />
+          
+            <div class="absolute bottom-2 p-4">
+              <h2 class="text-white font-bold text-lg">Museum Tour</h2>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Column 2 -->
+        <div class="w-full sm:w-[370px] h-[526px] bg-white rounded-lg shadow-lg overflow-hidden relative">
+          <img
+          src="/assets/div.featureCard__image (8).png "
+            class="w-full h-full object-cover"
+            alt="Location"
+          />
+         
+          <div class="absolute bottom-2 p-4">
+            <h2 class="text-white font-bold text-lg">Beach Tours</h2>
+           
+          </div>
+        </div>
+    
+        <!-- Column 3 -->
+        <div class="flex flex-wrap gap-4 w-[500px] sm:w-[470px]">
+          <div class="bg-white w-full sm:w-[470px] h-[250px] rounded-lg shadow-lg overflow-hidden relative">
+            <img
+              src="/assets/div.featureCard__image (9).png"
+              class="w-full h-full object-cover"
+              alt="Location"
+            />
+            
+            <div class="absolute bottom-2 p-4">
+              <h2 class="text-white font-bold text-lg">City Tours</h2>
       
-                  </div>
-              </div>
+            </div>
           </div>
-          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <div class="sm:flex sm:items-center sm:justify-between">
-              <span class="text-sm text-[#ffffffcc] sm:text-center dark:text-gray-400">© 2021 - Biogy<a href="" class="hover:underline"></a>
-              </span>
-              <span class="text-[#ffffffcc]">Designed & Develop by Zakirsoft</span>
+    
+          <!-- card 2 & 3 -->
+          <div class="flex gap-4 w-full">
+            <div class="bg-white w-[190px] sm:w-[200px] h-[263px] rounded-lg shadow-lg overflow-hidden relative">
+              <img
+                src="/assets/div.featureCard__image (11).png"
+                class="w-full h-full object-cover"
+                alt="Location"
+              />
+           
+              <div class="absolute bottom-2 p-4">
+                <h2 class="text-white font-bold text-lg">Food</h2>
+        
+              </div>
+            </div>
+    
+            <div class="bg-white w-[270px] sm:w-[270px] h-[263px] rounded-lg shadow-lg overflow-hidden relative">
+              <img
+                src="/assets/div.featureCard__image (13).png"
+                class="w-full h-full object-cover"
+                alt="Location"
+              />
+              
+              <div class="absolute bottom-2 p-4">
+                <h2 class="text-white font-bold text-lg">Hiking</h2>
+  
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
-</body>
+      </div>
+     </section>
+
+    <!--Near footer -->
+    <h2 class="text-2xl max-w-screen-xl flex font-bold items-center justify-between mx-auto p-4 mt-5">
+      Top Trending
+      <button class="text-sm font-normal">See more</button>
+    </h2>
+    
+    <!-- six section -->
+    <div class="max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6 items-stretch justify-between mx-auto p-6">
+      <!-- card1 -->
+      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="p-3 rounded-t-lg" src="/assets/image (13).png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+          <p class="font-normal text-sm text-[#717171] ml-[42px]">Paris, France</p>
+          <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Centipede Tour - Guided Arizona Desert Tour by ATV
+            </h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5 text-center">
+            <p class="text-center mx-auto">4.8 (243)</p>
+          </div>
+          <hr size="1" class="border" />
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-sm text-gray-900 font-medium dark:text-white">4 days</span>
+            <a href="#" class="text-gray-900 focus:ring-4 focus:outline-none font-medium focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">From $189.25</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- card 2 -->
+      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="p-3 rounded-t-lg" src="/assets/div.tourCard__image (3).png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+          <p class="font-normal text-sm text-[#717171] ml-[42px]">New York, USA</p>
+          <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Molokini and Turtle Town Snorkeling Adventure 
+            </h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5 text-center">
+            <p class="text-center mx-auto">4.8 (243)</p>
+          </div>
+          <hr size="1" class="border" />
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-sm text-gray-900 font-medium dark:text-white">4 days</span>
+            <a href="#" class="text-gray-900 focus:ring-4 focus:outline-none font-medium focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">From $225</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- card 3 -->
+      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="p-3 rounded-t-lg" src="/assets/image (14).png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+          <p class="font-normal text-sm text-[#717171] ml-[42px]">London, UK</p>
+          <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Westminster Walking Tour & Westminster Abbey Entry
+            </h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5 text-center">
+            <p class="text-center mx-auto">4.8 (243)</p>
+          </div>
+          <hr size="1" class="border" />
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-sm text-gray-900 font-medium dark:text-white">4 days</span>
+            <a href="#" class="text-gray-900 focus:ring-4 focus:outline-none font-medium focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">From $943</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- card 4 -->
+      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="p-3 rounded-t-lg" src="/assets/image (15).png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+          <p class="font-normal text-sm text-[#717171] ml-[42px]">New York, USA</p>
+          <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              All Inclusive Ultimate Circle Island Day Tour with Lunch
+            </h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5 text-center">
+            <p class="text-center mx-auto">4.8 (243)</p>
+          </div>
+          <hr size="1" class="border" />
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-sm text-gray-900 font-medium dark:text-white">4 days</span>
+            <a href="#" class="text-gray-900 focus:ring-4 focus:outline-none font-medium focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">From $771</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- footer -->
+    <footer class="bg-[#272343] dark:bg-gray-900 mt-56 md:-mt-1">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <!-- Flex container for the main content -->
+        <div class="md:flex md:justify-between">
+          <!-- Logo and description -->
+          <div class="mb-6 md:mb-0">
+            <a href="" class="text-4xl text-[#FFFFFF]">Biog<span class="text-[#FB743E]">y.</span></a>
+            <p class="text-[#ffffffcc] mt-1 font-light">
+              Phasellus porttitor sapien a purus <br class="hidden sm:block" /> venenatis condimentum. Nunc lectus <br class="hidden sm:block" />
+              ipsum, laoreet ut efficitur.
+            </p>
+          </div>
+    
+          <!-- Grid for links and newsletter -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-6">
+            <!-- Category Links -->
+            <div>
+              <h2 class="mb-2 text-2xl font-semibold text-[#FFFFFF] dark:text-white">Category</h2>
+              <ul class="text-[#ffffffcc] dark:text-gray-400 font-light">
+                <li class="mb-1">
+                  <a href="#" class="hover:underline">Travel</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#" class="hover:underline">Food</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#" class="hover:underline">Lifestyle</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#" class="hover:underline">Fashion</a>
+                </li>
+              </ul>
+            </div>
+    
+            <!-- Follow Us Links -->
+            <div>
+              <h2 class="mb-2 text-2xl font-semibold text-[#FFFFFF] dark:text-white">Follow us</h2>
+              <ul class="text-[#ffffffcc] dark:text-gray-400 font-light">
+                <li class="mb-1">
+                  <a href="#" class="hover:underline">Facebook</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#" class="hover:underline">Twitter</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#" class="hover:underline">Instagram</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#" class="hover:underline">Youtube</a>
+                </li>
+              </ul>
+            </div>
+    
+            <!-- Newsletter Section -->
+            <div>
+              <h2 class="mb-2 text-2xl font-semibold text-[#FFFFFF] dark:text-white">Newsletter</h2>
+              <div class="flex flex-col sm:flex-row gap-2">
+                <input
+                  class="px-3 py-3 bg-[#5b567b] text-white placeholder-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FB743E]"
+                  type="text"
+                  placeholder="Enter Email"
+                />
+                <button
+                  type="button"
+                  class="text-white bg-[#FB743E] border-0 text-md px-3 py-3 rounded-lg hover:bg-[#e65a2e] focus:outline-none focus:ring-2 focus:ring-[#FB743E]"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Divider -->
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    
+        <!-- Footer Bottom -->
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-[#ffffffcc] sm:text-center dark:text-gray-400">
+            &copy; 2021 - Biogy. All rights reserved.
+          </span>
+          <span class="text-sm text-[#ffffffcc]">Designed & Developed by Zakirsoft</span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
